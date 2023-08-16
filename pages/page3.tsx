@@ -6,13 +6,11 @@ export async function getStaticProps() {
     return {
         props: {
             header: `Time right now is ${timeRightNow}`
-        },
-        // The 'revalidate' setting causes the page to dynamically re-generate server-side at most once every 10 seconds
-        revalidate: 10
+        }        
     }
 }
 
-export default function Page2(props: any) {
+export default function Page3(props: any) {
     const { header } = props;
 
     return (
