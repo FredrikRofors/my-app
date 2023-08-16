@@ -1,6 +1,6 @@
 
 // getStaticProps will cause the page to pre-render on build
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const timeRightNow = Date.now();
 
     return {
@@ -16,7 +16,7 @@ export default function Page3(props: any) {
     return (
         <>
             <h1>{header}</h1>
-            <p>This page uses getStaticProps and will ONLY be generated at build time.</p>
+            <p>This page uses getServerSideProps and will be genereted server-side on a per request basis.</p>
         </>
     )
 }

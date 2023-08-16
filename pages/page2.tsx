@@ -18,6 +18,7 @@ export default function Page2(props: any) {
     return (
         <>
             <h1>{header}</h1>
+            <p>This page uses getStaticProps with 'revalidate' (caching) specified, and will hence be generated at build time but re-generated server-side every 10 seconds.</p>
         </>
     )
 }
