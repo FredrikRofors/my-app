@@ -10,7 +10,9 @@ export async function getStaticProps() {
     }
 }
 
-export default function Page2({ header }) {
+export default function Page2(props: any) {
+    const { header } = props;
+
     return (
         <>
             <h1>{header}</h1>
